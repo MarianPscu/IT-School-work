@@ -6,8 +6,10 @@ b = 6
 
 
 while b:
+
+    a
     b = a % b
-    a = b
+    
     
 
 print(a)

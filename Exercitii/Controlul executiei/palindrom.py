@@ -1,4 +1,4 @@
-#Method 1
+
 
 n = 292
 
@@ -11,3 +11,6 @@ if n == int_process:
 
 else:
     print("Is not palindrome")
+
+
+
