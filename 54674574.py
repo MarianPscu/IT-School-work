@@ -1,8 +1,9 @@
-my_num = int(input("Select a number: "))
+tuple_list = [("Dorin", 25), ("George", 24), ("Sorin", 19), ("Gigi", 55)]
+empty_dict = {}
 
-current_number = 1
+for tuple_item in tuple_list:
+    for name, age in enumerate(tuple_item):
+        empty_dict.update({"name": age})
 
 
-for i in range(1, my_num):
-    stars = i + (i - 1)
-    print("*" * stars)
+print(empty_dict)

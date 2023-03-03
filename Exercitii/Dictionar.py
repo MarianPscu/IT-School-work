@@ -1,0 +1,9 @@
+lista = {"Gelu": 67, "Zoro": 55, "Batman": 25}
+sorting = []
+
+for name in lista.keys():
+    sorting.append(name)
+
+sorting.sort(reverse=True)
+
+print(sorting)
