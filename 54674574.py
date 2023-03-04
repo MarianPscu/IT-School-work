@@ -1,9 +1,8 @@
-tuple_list = [("Dorin", 25), ("George", 24), ("Sorin", 19), ("Gigi", 55)]
-empty_dict = {}
+my_dict = {'banana': 3, 'apple': 2, 'orange': 1}
 
-for tuple_item in tuple_list:
-    for name, age in enumerate(tuple_item):
-        empty_dict.update({"name": age})
+# sort the dictionary by value
+sorted_dict = dict(sorted(my_dict.items(), key=lambda x: x[1]))
 
-
-print(empty_dict)
+# print the sorted dictionary
+for key, value in sorted_dict.items():
+    print(key, value)
