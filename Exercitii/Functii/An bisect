@@ -1,0 +1,10 @@
+def bisectul(year):
+
+    if year % 4 == 0:
+        return True
+    
+    else:
+        return False
+    
+
+print(bisectul(2005))
