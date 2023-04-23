@@ -7,3 +7,11 @@ for name in lista.keys():
 sorting.sort(reverse=True)
 
 print(sorting)
+
+finder = "Gelu"
+
+if finder in lista:
+    print(True)
+
+else:
+    print(False)
