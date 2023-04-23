@@ -63,6 +63,12 @@ class Car:
             raise ValueError("Not enough spaces left")
         self.__passengers.append(person)
 
+    def is_busy(self):
+        return self.__busy
+    
+    
+
+
 
 class Person:
 

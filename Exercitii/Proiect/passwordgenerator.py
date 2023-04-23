@@ -112,4 +112,4 @@ def generate_password():
 get_length()
 get_digits()
 get_symbols()
-print(generate_password())
+print(f"Your password is {generate_password()}")
