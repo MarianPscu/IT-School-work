@@ -45,6 +45,18 @@ class Card:
 
     def __repr__(self) -> str:
         return self.__str__()
+    
+    def __iter__(self):
+        self.__current_card = 0
+        return self
+    
+    def __next__(self):
+        if self.__current_card == len(self.__cards):
+            raise StopIteration()
+        
+        cc = self.__cards[self.__current_card]
+        self.__current_card += 1
+        return cc
 
     def get_number(self) -> int:
         return CARD_VALUE_MAP[self.__number]
@@ -91,6 +103,18 @@ class Deck:
     def __len__(self):
         # trebuie sa returneze int sau float
         return len(self.__cards)
+    
+    def __iter__(self):
+        self.__current_card = len(self.__cards) - 1
+        return self
+    
+    def __next__(self):
+        if self.__current_card == len(self.__cards) - 2
+            raise StopIteration()
+        
+        cc = self.__cards[self.__current_card]
+        self.__current_card -= 1
+        return cc
 
     def get_cards(self, n):
 
@@ -110,6 +134,13 @@ class Deck:
 
     def shuffle(self):
         random.shuffle(self.__cards)
+
+    def septica(self, deck: Deck):
+        for card in deck:
+            if card.getvalue() >= 7:
+                return self.__cards()
+        
+        pass
 
     def run_game(self):
         player_hand = self.get_cards(2)
